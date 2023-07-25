@@ -1,4 +1,4 @@
-# Canary Deployments with Cloud Run and Cloud Build
+### Canary Deployments with Cloud Run and Cloud Build
 
 ## Overview
 

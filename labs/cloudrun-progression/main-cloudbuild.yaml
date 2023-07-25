@@ -59,4 +59,4 @@ steps:
           echo Canary is $${CANARY}
           echo gcloud beta run services update-traffic  ${_SERVICE_NAME} --update-tags=sha-$SHORT_SHA=$${CANARY}  --platform managed  --region ${_REGION}
           gcloud beta run services update-traffic  ${_SERVICE_NAME} --update-tags=sha-$SHORT_SHA=$${CANARY}  --platform managed  --region ${_REGION}
-          gcloud run services update-traffic  ${_SERVICE_NAME} --to-revisions=$${PROD}=90,$${CANARY}=10  --platform managed  --region ${_REGION}
+          gcloud run services update-traffic  ${_SERVICE_NAME} --to-revisions=$${PROD}=60,$${CANARY}=40  --platform managed  --region ${_REGION}
